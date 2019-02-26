@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>act_report</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:first-child { margin-top: -20px; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: normal; src: local("Open Sans Regular"), url("./github/400.woff") format("woff"); }
+@font-face { font-family: "Open Sans"; font-style: italic; font-weight: normal; src: local("Open Sans Italic"), url("./github/400i.woff") format("woff"); }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: bold; src: local("Open Sans Bold"), url("./github/700.woff") format("woff"); }
+@font-face { font-family: "Open Sans"; font-style: italic; font-weight: bold; src: local("Open Sans Bold Italic"), url("./github/700i.woff") format("woff"); }
+html { font-size: 16px; }
+body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
+#write { max-width: 860px; margin: 0px auto; padding: 30px 30px 100px; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+a { color: rgb(65, 131, 196); }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 tt, h1 code { font-size: inherit; }
+h2 tt, h2 code { font-size: inherit; }
+h3 tt, h3 code { font-size: inherit; }
+h4 tt, h4 code { font-size: inherit; }
+h5 tt, h5 code { font-size: inherit; }
+h6 tt, h6 code { font-size: inherit; }
+h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+h3 { font-size: 1.5em; line-height: 1.43; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: rgb(119, 119, 119); }
+p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px solid rgb(223, 226, 229); padding: 0px 15px; color: rgb(119, 119, 119); }
+blockquote blockquote { padding-right: 0px; }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(248, 248, 248); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr th:first-child, table tr td:first-child { margin-top: 0px; }
+table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
+.CodeMirror-lines { padding-left: 4px; }
+.code-tooltip { box-shadow: rgba(0, 28, 36, 0.3) 0px 1px 1px 0px; border-top: 1px solid rgb(238, 242, 242); }
+.md-fences, code, tt { border: 1px solid rgb(231, 234, 237); background-color: rgb(248, 248, 248); border-radius: 3px; padding: 2px 4px 0px; font-size: 0.9em; }
+code { background-color: rgb(243, 244, 244); padding: 0px 2px; }
+.md-fences { margin-bottom: 15px; margin-top: 15px; padding: 8px 1em 6px; }
+.md-task-list-item > input { margin-left: -1.3em; }
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { word-wrap: break-word; }
+}
+.md-fences { background-color: rgb(248, 248, 248); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+.md-mathjax-midline { background: rgb(250, 250, 250); }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: rgb(167, 167, 167); opacity: 1; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
+.md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+#md-notification .btn { border: 0px; }
+.dropdown-menu .divider { border-color: rgb(229, 229, 229); }
+
+
+
+
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><p>&nbsp;</p><h1><a name='header-n2' class='md-header-anchor '></a>云吸狗也有啊哈时刻</h1><p>——一颗吃饱没事干强行撸猫老被咬的卤蛋对搞笑萌宠推特WeRateDogs的过度分析</p><p>&nbsp;</p><blockquote><p>仅以此文献给高冷狂傲拽炸天的蛋蛋：</p><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548492463097.png' alt='1548492463097' referrerPolicy='no-referrer' /></p><p>（一脸怨念地）如果不是因为我每次去撸你你都狠狠咬我的手，这个项目早八百年前就撸完了（cai guai）~</p></blockquote><p>&nbsp;</p><h2><a name='header-n10' class='md-header-anchor '></a>1. WeRateDogs是什么？可以补钙吗？</h2><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548486105859.png' alt='1548486105859' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><p><span>	</span>WeRateDogs是推特上受欢迎的萌宠推主之一。其主要风格为搞笑，具体表现形式为使用推文为一张狗狗（well，理论上都是）的照片进行十分制的打分。尽管其满分为10分，但推主常常打出10分以上的高分（13，14等），并一本正经的配上推文说明理由，十分有趣。推主有时也会一本正经给一些并不是狗的照片打分，喜剧效果十足。某些时候某些狗狗会被刻意打出低分，同样配上令人捧腹的推文。</p><p><span>	</span>WeRateDogs创建于11月15日。创始人时坎贝尔大学的（辍）学生Matt Nelson，当时读该校高尔夫管理专业的大二学生。当时，他和他的朋友们一起在一家苹果蜜蜂餐厅(Applebee&#39;s）的餐桌旁，用WeRateDogs账号发出了第一条推特。</p><p><span>	</span>如同天底下所有真实的创业故事那样，这个独特的推特账号的发展并非一帆风顺。15年11、12月是最初的激情，很快挑战便接踵而至：</p><ul><li><p>大学繁重的课业使得Nelson疲惫不堪，严重睡眠不足，甚至不得不放弃了高尔夫球（well，作为一名高尔夫管理专业的学生，这好像有点，emmm......too much）；</p></li><li><p>16年2月，甚至有人给他下套，声称WeRateDogs侵犯了图片版权；</p></li><li><p>16年春季，他招聘并最终开除了两名员工；其中一位还想买下他的账号。</p><p>&nbsp;</p></li></ul><p><span>	</span>这里当然没有主人公强撑这，凭着极度的自信、过人的胆识强撑着运营，并最后成功逆袭的故事。身心俱疲的Nelson当然想过放弃。他联系了John Ricci，一位拥有丰富社交媒体运营经验的市场人，想要卖掉账号一了百了，没想到后者居然拒绝了。Rucci看到了账号的潜力，极力劝说Matt改变方式坚持运营，并在16年某个未知的时间点开始帮助他运营。Rucci每天帮Matt筛选出20-30张各地粉丝发来的请求打分的照片，而Nelson则挑出两张，分别在中午和晚上8：00左右发出即可。慢慢的，Nelson重新找到了节奏。17年某个未知的时间点，升入大四的Nelson退学，全心投入推特账号的运营。</p><p><span>	</span>现在，WeRateDogs主要依靠自营<a href='https://weratedogs.com/'>电商</a>盈利，向通过推特账号积攒的粉丝售卖写有推特账号标志性语录的狗狗围巾、卫衣等。Nelson自己透露，每个月的收入在1万美元左右。</p><p>&nbsp;</p><blockquote><p>综合自下列报道</p></blockquote><ul><li><a href='http://money.com/money/5225272/weratedogs-matt-nelson-interview/'>This 21-Year-Old Quit College to Rate Dogs on the Internet. He&#39;s Now Making Six Figures</a>, </li><li><a href='http://www.jerkmagazine.net/john-ricci-interview/'>Jerk’s One-on-One with the Guy Who Makes a Living Rating Dogs</a>, </li><li><a href='https://www.esquire.com/lifestyle/a54940/we-rate-dogs-matt-nelson-interview/'>Pet Project</a>, </li><li><a href='https://www.bostonmagazine.com/arts-entertainment/2017/04/18/dog-rates-mit/'>WeRateDogs Is Coming to Cambridge</a>, </li><li><a href='https://www.themuse.com/advice/how-creator-of-weratedogs-twitter-account-started-career'>I Started the WeRateDogs Twitter Account and Here&#39;s My Career Story</a>, </li><li><a href='https://knowyourmeme.com/memes/theyre-good-dogs-brent'>They&#39;re Good Dogs Brent</a></li></ul><p>&nbsp;</p><h2><a name='header-n43' class='md-header-anchor '></a>2. 我们为啥闲着没事儿干会对一个推特账号感兴趣？我们究竟看上它哪点了？以及我们打算做什么？</h2><p>&nbsp;</p><h3><a name='header-n45' class='md-header-anchor '></a>2.1 为什么会吃饱了没事干研究一个推特账号</h3><p><span>	</span>Well，首先，这是一份作业。命题作文的命题如此，不研究它还能研究啥。</p><p><span>	</span>不过嘛，这个推特账号也不是特别没有意思。显然，WeRateDogs误打误撞探索出的这一定位十分有趣。如果我们拍一拍脑门调取一下我们的（未经检验、直觉构成的）常识，我们不难认为在传统上，1）萌宠推主千千万万，2）绝大多数萌宠的推文都停留在“啊！好萌！”的层次上，3）萌宠推主们之间的竞争主要依靠谁更萌获胜，4）这样的生态体系显然很容易导致严重的同质化，进而演变为洗稿和相互抄袭；5）给狗狗评价和打分的博主又太过严肃显得不近人情；6）传统的搞笑博主又几乎没有与宠物结合起来的。</p><p><span>	</span>通过直觉，我们不难得出马后炮式的经典结论：系统性的发掘狗狗的萌点，并通过带有喜剧色彩的文案强化，最后配上打破传统令人捧腹的打分和评价，令人耳目一新。这并不令人意外（说得就好像我们也能搞出来一样）。</p><p><span>	</span>但是，正如开心麻花的喜剧，在让观众开怀大笑之余，也有商业和受欢迎程度的考量一样，WeRateDogs的内容质量显然也是有部分更受欢迎的。问题是，<strong>究竟是怎样的内容更受欢迎呢？</strong></p><p><span>	</span>在进行分析之前，我们需要明确，什么是“更受欢迎”。传统意义上，我们需要知道一条推特在发出的时候有多少关注者，这条推特有多少浏览量，多少点赞数和多少转发数，来一步一步计算转化比例。在这一框架中，更多的浏览量可能意味着火爆，但运营者们显然更关注点赞和转发的数据。</p><p><span>	</span>在这篇过度分析中，我们将围绕两个维度进行受欢迎程度的探索：</p><ul><li><p><strong>点赞量</strong>，在拿不到关注量和浏览量这两个数据的前提之下，点赞量(数据集中叫favorite,Teitter上实际叫like）是最能直接反映一条推文得到关注和赞赏的指标；</p></li><li><p><strong>转赞比</strong>（Retweet/Favorite Ratio），衡量的是转发用户占点赞用户的比例，用于衡量核心用户占整体点赞用户的比例；</p><p>转赞比可以用来衡量核心用户占比的理论依据如下：</p></li><li><p>一个用户在社交网络上发出的内容，本质上都是他/她的社交货币；</p></li><li><p>社交货币是建立人设的一部分，是用户与周遭用户交流的一种前置条件，因此相比起点赞，转发更加困难，因其牵扯到个人形象问题；</p></li><li><p>社交货币依靠转发和原创内容生成；点赞不涉及分享，绝大多数社交网络（嗯我没有说微信朋友圈）里看不到点赞的详细信息，并不构成社交货币；</p></li><li><p>转发，意味着用户愿意将推文内容作为自己人设的一部分；这可能意味着他/她是这一话题的核心粉丝，并且不介意周围人知道这一点，哪怕，在此案例中，这枚社交货币是娱乐用途。</p></li></ul><p> </p><h3><a name='header-n67' class='md-header-anchor '></a>为了研究我们感兴趣的点，我们做了什么 </h3><p>&nbsp;</p><h2><a name='header-n69' class='md-header-anchor '></a>3. 推特账号运营的基本情况一览</h2><p>在尝试使用数据解答任何问题之前，需要使用数据对全局进行大概的了解。不然任何分析都是无源之水无本之木。</p><p>&nbsp;</p><h3><a name='header-n72' class='md-header-anchor '></a>3.1 WeRateDogs的哈哈哈时刻</h3><h4><a name='header-n73' class='md-header-anchor '></a>最棒宝贝：勤奋好学大柯基！14分！（最高评分）</h4><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548487529419.png' alt='1548487529419' referrerPolicy='no-referrer' /></p><blockquote><p>This is Cassie. She is a college pup. Studying international doggo communication and stick theory. 14/10 so elegant much sophisticate <a href='https://t.co/t1bfwz5S2A' target='_blank' class='url'>https://t.co/t1bfwz5S2A</a></p></blockquote><p>&nbsp;</p><h4><a name='header-n78' class='md-header-anchor '></a>最佳人气：妇女之友！（最多点赞）</h4><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548487967535.png' alt='1548487967535' referrerPolicy='no-referrer' /></p><blockquote><p>Here&#39;s a super supportive puppo participating in the Toronto  #WomensMarch today. 13/10 <a href='https://t.co/nTz3FtorBc' target='_blank' class='url'>https://t.co/nTz3FtorBc</a></p></blockquote><p>&nbsp;</p><h4><a name='header-n83' class='md-header-anchor '></a>最多铁粉：超萌小柯基！（最高转赞比）</h4><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548488089363.png' alt='1548488089363' referrerPolicy='no-referrer' /></p><blockquote><p>Retweet the h*ck out of this 13/10 pupper #BellLetsTalk <a href='https://t.co/wBmc7OaGvS' target='_blank' class='url'>https://t.co/wBmc7OaGvS</a></p></blockquote><p>欸喂喂喂，Matt你这样构成诱导分享啊！不怕被平台封吗？！</p><p>&nbsp;</p><h4><a name='header-n89' class='md-header-anchor '></a>特别·最具惊喜奖：最新发现的神秘品种！</h4><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548488508197.png' alt='1548488508197' referrerPolicy='no-referrer' /></p><blockquote><p>Cool dog. Enjoys couch. Low monotone bark. Very nice kicks. Pisses milk (must be rare). Can&#39;t go down stairs. 4/10 <a href='https://t.co/vXMKrJC81s' target='_blank' class='url'>https://t.co/vXMKrJC81s</a></p></blockquote><p>&nbsp;</p><h4><a name='header-n94' class='md-header-anchor '></a>以及，特别·最佳粉丝奖（&amp; 最少铁粉奖）：天生慧眼Kelvin Hill !</h4><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548488306953.png' alt='1548488306953' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><h3><a name='header-n97' class='md-header-anchor '></a>3.2 分数越来越高，当然是因为超棒狗狗越来越多啦！</h3><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548488761354.png' alt='1548488761354' referrerPolicy='no-referrer' /></p><p><span>	</span>将账号打出的分数按月汇集，绘制为箱型图。平均分数越来越高；单月的分数区间越来越小</p><p>&nbsp;</p><h3><a name='header-n101' class='md-header-anchor '></a>3.3 成长的烦恼：转赞率一路下滑</h3><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548488896864.png' alt='1548488896864' referrerPolicy='no-referrer' /></p><p><span>	</span>将每一条推特信息的点赞量（绿）和转发量（黄）取10的对数后绘制成散点图；将转赞率取5日移动平均值绘制为折线图；取账号点赞量创下新高的推特，用红色做特别标注。三者沿同样的时间序列排序。</p><p><span>	</span>随着时间的推移，虽然账号的点赞量和转发数都在上涨，但新高间隔越来越长，转赞比一路下降的趋势不可逆转。</p><p>&nbsp;</p><h3><a name='header-n106' class='md-header-anchor '></a>3.4 爆发—跌倒—站稳脚跟：艰难的16年4月，账号历史上的至暗时刻</h3><h3><a name='header-n107' class='md-header-anchor '></a><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548489437766.png' alt='1548489437766' referrerPolicy='no-referrer' /></h3><p><span>	</span>将账号的推特条数（红色折线），点赞量和转发量按月汇总，分别绘制加（上）和和平均值（下）的柱状图。</p><p><span>	</span>在初期的爆发之后，16年春季推特账号的点赞量和推特条数不断下滑。结合媒体的报道，当时账号确实正在经受初期的失败和团队动荡。不过在如此的压力之下，Matt的推文质量（平均点赞量和转发量）还能保持，非常厉害！</p><p>&nbsp;</p><h2><a name='header-n111' class='md-header-anchor '></a>4. 推文几点，星期几发都行：客观因素对推文受欢迎程度影响不大</h2><h3><a name='header-n112' class='md-header-anchor '></a>4.1 Matt Nelson是个夜猫子，越夜越疯狂那种</h3><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\Tweets_per_Hour.png' alt='Tweets_per_Hour' referrerPolicy='no-referrer' /></p><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\Tweets_per_Hour_per_year.png' alt='Tweets_per_Hour_per_year' referrerPolicy='no-referrer' /></p><p><span>	</span>将推文数据按小时聚合，绘制点赞量、转发量，转赞比和推文条数。</p><p><span>	</span>我们发现：MattNelson喜欢在下午和晚上发推。</p><p><span>	</span>不过，为他创下了最高点赞量的式凌晨6点的一条推文。就是这条推文，使我们不得不给这幅图的y轴主坐标取对数。不得不说，他老人家真的是越夜越疯狂啊~</p><p><span>	</span>不过，17年他再也没有在5点到13点之间发过推特了。被妈妈骂了？</p><p>&nbsp;</p><h3><a name='header-n120' class='md-header-anchor '></a>4.2 周一生产力爆棚，但对推文的受欢迎程度影响不大</h3><p>&nbsp;</p><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\Tweets_per_Day.png' alt='Tweets_per_Day' referrerPolicy='no-referrer' /></p><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\Tweets_per_Day_per_year.png' alt='Tweets_per_Day_per_year' referrerPolicy='no-referrer' /></p><p><span>	</span>将推文的发帖量，平均点赞量和转发量按星期汇集。</p><p><span>	</span>长期来看：周一Matt的发帖量略高，周三平均点赞量更高，但总体趋势平缓。我们不认为这其中蕴藏着什么秘密。</p><p><span>	</span>当然，我们有可能是错的。如果将数据去趋势化再聚集，说不定就是另外一个故事了。</p><p>&nbsp;</p><h2><a name='header-n128' class='md-header-anchor '></a>5. 众汪平等，小狗疲劳，与高低有别——对推文特征的观察</h2><p>在我们提取了一系列推文特征之后，我们最终得出了这三个有意思的结论。</p><p>&nbsp;</p><h3><a name='header-n131' class='md-header-anchor '></a>5.1 众汪平等</h3><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548490780820.png' alt='1548490780820' referrerPolicy='no-referrer' /></p><p><span>	</span>筛选出数据集中被机器学习判断“一定是狗”的条目。按照品种字段聚合，计算平均点赞量，平均转赞比和推特条数。选出前10名，按照平均点赞量由高到低排列。可以看到：萨卢基猎犬，法国斗牛犬等品种有相对更高的平均点赞量。</p><p><span>	</span>但是，我们进一步的检验表明，这些品种中存在的平均点赞量和转赞比的区别并没有统计学意义上的区别：根据已知的条件判断，随着推特条数的增多，这些品种的平均点赞量和平均转赞比很可能趋于一致。也就意味着，我们没有足够的证据认为他们的受欢迎程度是不同的。</p><p>&nbsp;</p><h3><a name='header-n136' class='md-header-anchor '></a>5.2 小狗疲劳：<strong>小奶狗居然不吃香</strong></h3><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548491221054.png' alt='1548491221054' referrerPolicy='no-referrer' /></p><p><span>	</span>推主Marr Nelson在表述狗狗的时候发明了如下词汇：</p><ul><li>Doggo，可以简单的理解为大狗（尽管作者表示这并不代表大狗就不是宝宝了）</li><li>Pupper，可以简单的理解为小狗，主要是体型小，一般年龄也比较小（但这不代表大狗就不是宝宝了）</li><li>Puppo，可以简单的理解为青春期的狗狗，介于大狗和小狗之间（也可能是表现得像pupper的doggo）</li><li>Floofer，可以简单的理解为毛好看的狗狗。</li></ul><p><span>	</span>这些词汇主要用于形容不同狗狗的生长状态。从词汇构成的角度来看，其主要由一个主词汇和后缀变体组成（例如doggo = dog + go, pupper = pup + per），营造出一种喜庆但略显低龄化的语言现象（待补充）。上述所谓的“简单理解”，是指在尽可能不曲解原意的情况下，抛弃作者营造的一切搞笑成分，并尽量压缩理解难度。总而言之言而总之一言以蔽之，这个分类比较随意，亲爱的读者你大概知道这么个意思就行。</p><p>&nbsp;</p><p><span>	</span>我们按照上述分类条件将推文汇总。我们发现<strong>小狗和未说明的推特条目似乎没有其他分类平均点赞量高</strong>。进一步的统计分析则支持了上述观察。看来在Matt这里萌萌哒的小奶狗不太行呀~</p><p><span>	</span></p><h3><a name='header-n152' class='md-header-anchor '></a>5.3 高低有别：低分有铁粉，高分更吸睛</h3><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548491570181.png' alt='1548491570181' referrerPolicy='no-referrer' /></p><p>我们将分数分为4个等级：</p><figure><table><thead><tr><th>分数段</th><th>类别（中）</th><th>类别（英）</th></tr></thead><tbody><tr><td>0-3.5</td><td>极低</td><td>Very Low</td></tr><tr><td>3.5-7</td><td>低</td><td>Low</td></tr><tr><td>7-10</td><td>中</td><td>Medium</td></tr><tr><td>10-14</td><td>高</td><td>High</td></tr></tbody></table></figure><p>&nbsp;</p><p><span>	</span>以推文的点赞量和转发量分别为横、纵坐标绘制散点图，并表明其分数类别，可以看到不同的分数组在分布上有明显的差别。</p><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548491779225.png' alt='1548491779225' referrerPolicy='no-referrer' /></p><p><span>	</span>以上述分数段分组，绘制点赞量和转赞比的箱型图。似乎高分组的平均点赞量更高，低分与超低分组拥有更高的转赞比。后续的统计学检验支持了我们这一结论：<strong>低分有铁粉，高分更吸睛</strong>。</p><p><span>	</span>这可能是由于低分组主要集中在账号创立早期，转赞比本身就较高的时代，拉高了平均值。下图显示了分数分组占比的逐年变化情况。</p><p><img src='C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\Change in Average Cate.png' alt='Change in Average Cate' referrerPolicy='no-referrer' /></p></div>
+</body>
+</html>
