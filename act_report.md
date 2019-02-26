@@ -6,17 +6,23 @@
 
 
 
-> 仅以此文献给高冷狂傲拽炸天的蛋蛋：
+> 仅以此文献给高冷狂傲拽炸天见鸡胸肉一秒变乖的蛋蛋：
 >
-> ![1548492463097](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548492463097.png)
+> ![蛋总的帅照](assets/1548492463097.png)
 >
->  （一脸怨念地）如果不是因为我每次去撸你你都狠狠咬我的手，这个项目早八百年前就撸完了（cai guai）~
+> （一脸怨念地）如果不是因为我每次去撸你你都狠狠咬我的手，这个项目早八百年前就撸完了（cai guai）~
+
+
+
+[TOC]
 
 
 
 ## 1. WeRateDogs是什么？可以补钙吗？
 
-![1548486105859](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548486105859.png)
+
+
+![1548486105859](assets/1548486105859.png)
 
 
 
@@ -50,11 +56,7 @@
 
 
 
-## 2. 我们为啥闲着没事儿干会对一个推特账号感兴趣？我们究竟看上它哪点了？以及我们打算做什么？
-
-
-
-### 2.1 为什么会吃饱了没事干研究一个推特账号
+## 2. 我们为啥闲着没事儿干会对一个推特账号感兴趣？
 
 ​	Well，首先，这是一份作业。命题作文的命题如此，不研究它还能研究啥。
 
@@ -84,7 +86,7 @@
 
  
 
-### 为了研究我们感兴趣的点，我们做了什么 
+### 3. 数据集的基本情况介绍，及数据清洗步骤简介 
 
 
 
@@ -98,7 +100,7 @@
 
 #### 最棒宝贝：勤奋好学大柯基！14分！（最高评分）
 
-![1548487529419](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548487529419.png)
+![14分的学霸基](assets/1548487529419.png)
 
 > This is Cassie. She is a college pup. Studying international doggo communication and stick theory. 14/10 so elegant much sophisticate https://t.co/t1bfwz5S2A
 
@@ -106,7 +108,7 @@
 
 #### 最佳人气：妇女之友！（最多点赞）
 
-![1548487967535](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548487967535.png)
+![妇女之友](assets/1548487967535.png)
 
 > Here's a super supportive puppo participating in the Toronto  #WomensMarch today. 13/10 https://t.co/nTz3FtorBc
 
@@ -114,7 +116,7 @@
 
 #### 最多铁粉：超萌小柯基！（最高转赞比）
 
-![1548488089363](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548488089363.png)
+![超萌小基](assets/1548488089363.png)
 
 > Retweet the h*ck out of this 13/10 pupper #BellLetsTalk https://t.co/wBmc7OaGvS
 
@@ -122,9 +124,9 @@
 
 
 
-#### 特别·最具惊喜奖：最新发现的神秘品种！
+#### 特别·最具惊喜奖：最新发现的神秘物种！
 
-![1548488508197](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548488508197.png)
+![神秘物种](assets/1548488508197.png)
 
 >  Cool dog. Enjoys couch. Low monotone bark. Very nice kicks. Pisses milk (must be rare). Can't go down stairs. 4/10 https://t.co/vXMKrJC81s
 
@@ -132,13 +134,13 @@
 
 #### 以及，特别·最佳粉丝奖（& 最少铁粉奖）：天生慧眼Kelvin Hill !
 
-![1548488306953](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548488306953.png)
+![天生慧眼Kevin_Hill](assets/1548488306953.png)
 
 
 
 ### 3.2 分数越来越高，当然是因为超棒狗狗越来越多啦！
 
-![1548488761354](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548488761354.png)
+![月度分数箱型图](assets/1548488761354.png)
 
 ​	将账号打出的分数按月汇集，绘制为箱型图。平均分数越来越高；单月的分数区间越来越小
 
@@ -146,7 +148,7 @@
 
 ### 3.3 成长的烦恼：转赞率一路下滑
 
-![1548488896864](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548488896864.png)
+![成长的烦恼](assets/1548488896864.png)
 
 ​	将每一条推特信息的点赞量（绿）和转发量（黄）取10的对数后绘制成散点图；将转赞率取5日移动平均值绘制为折线图；取账号点赞量创下新高的推特，用红色做特别标注。三者沿同样的时间序列排序。
 
@@ -156,7 +158,7 @@
 
 ### 3.4 爆发—跌倒—站稳脚跟：艰难的16年4月，账号历史上的至暗时刻
 
-### ![1548489437766](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548489437766.png)
+![至暗时刻](assets/1548489437766.png)
 
 ​	将账号的推特条数（红色折线），点赞量和转发量按月汇总，分别绘制加（上）和和平均值（下）的柱状图。
 
@@ -168,9 +170,9 @@
 
 ### 4.1 Matt Nelson是个夜猫子，越夜越疯狂那种
 
-![Tweets_per_Hour](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\Tweets_per_Hour.png)
+![Tweets_per_Hour](assets/Tweets_per_Hour.png)
 
-![Tweets_per_Hour_per_year](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\Tweets_per_Hour_per_year.png)
+![Tweets_per_Hour_per_year](assets/Tweets_per_Hour_per_year.png)
 
 ​	将推文数据按小时聚合，绘制点赞量、转发量，转赞比和推文条数。
 
@@ -184,11 +186,9 @@
 
 ### 4.2 周一生产力爆棚，但对推文的受欢迎程度影响不大
 
+![Tweets_per_WeekDay](assets/Tweets_per_Day.png)
 
-
-![Tweets_per_Day](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\Tweets_per_Day.png)
-
-![Tweets_per_Day_per_year](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\Tweets_per_Day_per_year.png)
+![Tweets_per_Day_per_year](assets/Tweets_per_Day_per_year.png)
 
 ​	将推文的发帖量，平均点赞量和转发量按星期汇集。
 
@@ -206,17 +206,17 @@
 
 ### 5.1 众汪平等
 
-![1548490780820](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548490780820.png)
+![众汪平等](assets/1548490780820.png)
 
 ​	筛选出数据集中被机器学习判断“一定是狗”的条目。按照品种字段聚合，计算平均点赞量，平均转赞比和推特条数。选出前10名，按照平均点赞量由高到低排列。可以看到：萨卢基猎犬，法国斗牛犬等品种有相对更高的平均点赞量。
 
-​	但是，我们进一步的检验表明，这些品种中存在的平均点赞量和转赞比的区别并没有统计学意义上的区别：根据已知的条件判断，随着推特条数的增多，这些品种的平均点赞量和平均转赞比很可能趋于一致。也就意味着，我们没有足够的证据认为他们的受欢迎程度是不同的。
+​	但是，我们进一步的检验表明，这些品种中存在的平均点赞量和转赞比的区别并没有统计学意义上的区别：根据已知的条件判断，随着推特条数的增多，这些品种的平均点赞量和平均转赞比很可能趋于一致。也就意味着，我们没有足够的证据认为他们的受欢迎程度是不同的。（冗长的统计学证明我们就不贴上来啦~）
 
 
 
-### 5.2 小狗疲劳：**小奶狗居然不吃香**
+### 5.2 小狗疲劳：小奶狗居然不吃香?!
 
-![1548491221054](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548491221054.png)
+![不同生长阶段的狗狗的点赞量级和转赞比分布](assets/1548491221054.png)
 
 ​	推主Marr Nelson在表述狗狗的时候发明了如下词汇：
 
@@ -235,7 +235,7 @@
 
 ### 5.3 高低有别：低分有铁粉，高分更吸睛
 
-![1548491570181](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548491570181.png)
+![1548491570181](assets/1548491570181.png)
 
 我们将分数分为4个等级：
 
@@ -250,10 +250,10 @@
 
 ​	以推文的点赞量和转发量分别为横、纵坐标绘制散点图，并表明其分数类别，可以看到不同的分数组在分布上有明显的差别。
 
-![1548491779225](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\1548491779225.png)
+![1548491779225](assets/1548491779225.png)
 
 ​	以上述分数段分组，绘制点赞量和转赞比的箱型图。似乎高分组的平均点赞量更高，低分与超低分组拥有更高的转赞比。后续的统计学检验支持了我们这一结论：**低分有铁粉，高分更吸睛**。
 
 ​	这可能是由于低分组主要集中在账号创立早期，转赞比本身就较高的时代，拉高了平均值。下图显示了分数分组占比的逐年变化情况。
 
-![Change in Average Cate](C:\Users\willl\OneDrive - WillfortheFuture\我的文档\学习\Python\Udacity\DA Advanced\P3\submission1\assets\Change in Average Cate.png)
+![Change in Average Cate](assets/Change in Average Cate.png)
